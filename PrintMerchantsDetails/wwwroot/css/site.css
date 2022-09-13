@@ -1,0 +1,37 @@
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+
+}
+.first-section{
+    border-bottom:dotted;
+}
+/*.second-section {
+    border-bottom: dashed;
+}*/
+.amount{
+    border-top:dotted;
+    border-bottom:dotted;
+}
+.fourth-section {
+    border-top: dotted;
+    border-bottom: dotted;
+}
+.thanks {
+    border-top: dotted;
+}

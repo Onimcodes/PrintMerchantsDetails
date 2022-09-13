@@ -1,0 +1,86 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model MerchantTransactionDetails
+@* MerchantDetail Section *@
+<section class="first-section pb-3">
+    <h5 class="title text-center">**** MERCHANT COPY ****</h5>
+    <div class="row mt-3 justify-content-center ">
+        <div class="col-md-3  text-md-center">MERCHANT NAME :</div>
+        <div class="col-md-5  text-md-center"> @Model.MerchantName</div>
+    </div>
+    <div class="row mt-3 justify-content-center ">
+        <div class="col-md-3  text-md-center">LOCATION :</div>
+        <div class="col-md-5  text-md-center"> @Model.Location</div>
+    </div>
+
+    <div class="row mt-3 justify-content-center  ">
+        <div class="col-md-3  text-md-center">Terminal Id :</div>
+        <div class="col-md-5  text-md-center"> @Model.TerminalId</div>
+    </div>
+</section>
+@* PURCHASE DETAILS *@
+<section class="second-section">
+    <h2 class="text-center">PURCHASE</h2>
+    <div class="row mt-3 justify-content-center ">
+        <div class="col-md-3  text-md-center">STAN :</div>
+        <div class="col-md-5  text-md-center"> @Model.STAN</div>
+    </div>
+
+    <div class="row mt-3 justify-content-center">
+        <div class="col-md-3  text-md-center">DATE/TIME :</div>
+        <div class="col-md-5  text-md-center "> @Model.DateTime</div>
+    </div>
+    <div class="row mt-3 justify-content-between  amount">
+        <div class="col-3  text-md-center fw-bold">AMOUNT:</div>
+        <div class="col-5  text-md-center fw-bold "> @Model.Amount NGN</div>
+    </div>
+
+
+</section>
+
+@* CARD DETAILS *@
+
+<section class="third-section">
+    <p>Debit MasterCard</p>
+    <p class="text-center fw-bold">@Model.DebitCard</p>
+    <p>369/Global ACCELEREX</p>
+    <div class="row mt-3 justify-content-center">
+        <div class="col-md-3  text-md-center">EXPIRY DATE:</div>
+        <div class="col-md-5  text-md-center "> @Model.ExpiryDate</div>
+    </div>
+    <div class="row mt-3 justify-content-center ">
+        <div class="col-md-3  text-md-center">AUTHORIZATION CODE:</div>
+        <div class="col-md-5  text-md-center "> @Model.AuthorizationCode</div>
+    </div>
+    <p>OFFLINE CVM</p>
+</section>
+
+@* TRANSACTION DETAILS SECTION *@
+<section class="fourth-section mb-5">
+    <h2 class="font-monospace text-center">TRANSACTION DECLINED</h2>
+    <div class="row mt-3 justify-content-center">
+        <div class="col-md-3  text-md-center">RESPONSE CODE :</div>
+        <div class="col-md-5  text-md-center "> @Model.ResponseCode</div>
+    </div>
+    <p>Issuer or switch inoperative </p>
+    <div class="row mt-3 justify-content-center">
+        <div class="col-md-3  text-md-center"> AID :</div>
+        <div class="col-md-5  text-md-center "> @Model.AID</div>
+    </div>
+    <div class="row mt-3 justify-content-center">
+        <div class="col-md-3  text-md-center">RRN :</div>
+        <div class="col-md-5  text-md-center "> @Model.RRN</div>
+    </div>
+    <p>Accelerex 2.0.0-090921-LINT</p>
+    <div class="row mt-3 justify-content-center ">
+        <div class="col-md-3  text-md-center">PTAD :</div>
+        <div class="col-md-5  text-md-center "> @Model.PTAD </div>
+    </div>
+
+</section>
+
+<div class="thanks text-center pt-3" > Thanks for using <span class="fw-bold">JAIZ BANK POS</span></div>
+
+
